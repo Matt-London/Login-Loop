@@ -8,6 +8,7 @@ import time
 
 ## Change the following if needed
 loginURL = "" # URL to login form
+useDelay = True # Keep true for delay between sends and increments, otherwise set to false
 formID = "" # form ID
 firstTerm = "email" # name of first term, default email
 secondTerm = "pass" # name of second term, default pass
@@ -63,11 +64,12 @@ try:
         print("{}. Email: {} Password: {}\t{} seconds".format(counter, email, password, round(time.time() - start, 2)))
 
         # After 100ish sends wait 10 ish minutes, after each send wait twentyish seconds
-        if counter == waitBetweenIter:
-            time.sleep(600 + random.randint(-23 + random.randint(-5, 5), 18 + random.randint(-4, 4)))
-            waitBetweenIter = 100 + random.randint(0, 99 + random.randint(-12, 17))
-        else:
-            time.sleep(20 + random.randint(-4 + random.randint(1, 3), 10 + random.randint(-1, 4)))
+        if useDelay:
+            if counter == waitBetweenIter:
+                time.sleep(600 + random.randint(-23 + random.randint(-5, 5), 18 + random.randint(-4, 4)))
+                waitBetweenIter = 100 + random.randint(0, 99 + random.randint(-12, 17))
+            else:
+                time.sleep(20 + random.randint(-4 + random.randint(1, 3), 10 + random.randint(-1, 4)))
 
         counter += 1
 
