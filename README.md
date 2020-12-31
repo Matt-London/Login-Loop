@@ -1,6 +1,7 @@
 # Login-Loop
 A program that submits a form with randomly generated emails and passwords.
 
+
 ## Setup
 Run the following in order to install the required Python modules:
 
@@ -57,6 +58,7 @@ Use the following to give all domain names that will be randomly assigned to gen
 emailExt = ["example.com"]
 ```
 
+
 ## Executing/Usage
 
 Run the following to launch the program:
@@ -75,8 +77,10 @@ Since all arguments are supplied within the code, there is no need for command-l
 ## Contributing
 If you would like to contribute, you may make a pull request. It will be helpful if you first open an issue describing the change that you are interested in contributing.
 
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
 
 ## Disclaimer
 <b>This is strictly for educational purposes and should not be deployed against any forms with which the user does not have permission to test. I disclaim any and all responsibility for the actions of the users of this program.<b>
