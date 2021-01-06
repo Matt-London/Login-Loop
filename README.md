@@ -1,5 +1,5 @@
 # Login-Loop
-A program that submits a form with randomly generated emails and passwords. Built to DEMONSTRATE how to combat phishing attacks. The delay option paired with a good proxy gives the POSTs the appearance of unique users. Let me just say the randomization of the delay is very much overkill!
+A program that submits a form with randomly generated emails and passwords. Built to DEMONSTRATE how to combat phishing attacks by flooding the database with false credentials, making it more difficult for an attacker to abuse the legitimate credentials submitted by their victims. The delay option paired with a good proxy gives the POSTs the appearance of unique users. Let me just say the randomization of the delay is very much overkill!
 
 
 ## Setup
